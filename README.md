@@ -27,4 +27,4 @@ npm run preview  # http://localhost:4173/artTemplate/
 
 - **Paintings and portrait:** use the artist's own work and photo, with their permission. Most placeholder images carry Unsplash+ watermarks, and Lilac Hour shows another painter's signature, so none of them can go live as-is.
 - **Cart and forms:** the cart, commission form and RSVP buttons are front-end only. Connect them to a shop (Shopify Buy Button, Square, Big Cartel) and a form service such as Formspree.
-- **Deploy:** the build is set up for GitHub Pages at `/artTemplate/` (`BASE` in `vite.config.js`). Change it to `/` for a custom domain or Cloudflare Pages. A copy of `index.html` is saved as `404.html` so `/shop` and `/shows` load on refresh.
+- **Deploy:** GitHub Actions builds and deploys the site to GitHub Pages whenever changes are pushed to `main`. In the repository's **Settings → Pages**, set **Build and deployment → Source** to **GitHub Actions**. The build is set up for `https://madscalls.github.io/artTemplate/` (`BASE` in `vite.config.js`); change it to `/` for a custom domain or Cloudflare Pages. A copy of `index.html` is saved as `404.html` so `/shop` and `/shows` load on refresh.
